@@ -3,18 +3,19 @@ header {
     font-family: monospace;
 }
 
-/* style all elements in the <body> */
 body {
     font-family: Georgia;
     vertical-align: top;
-    background-image: url("img/sky.jpg");
+    background-image: url("img/starry sky.jpg");
 }
 
 .img1{
-    float:right;
     height: 400px;
     width: 400px;
-    margin: 50px;
+    margin: 25px;
+    border-radius: 50px;
+    margin-top: 10px;
+
 }
 select {
     font-family: monospace;

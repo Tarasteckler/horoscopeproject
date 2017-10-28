@@ -1,10 +1,12 @@
 //happy friday
-var signs = ["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Invalid birthday"]
+var signs = ["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius",
+    "Capricorn", "Invalid birthday"];
 var zodiac = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"];
 
 function doIt() {
     var user = prompt("What is your name?", "");
-    document.getElementById("name").innerHTML = "Hello " + user + "! Here is your horoscope:";    var month = document.getElementById("Month").value;
+    document.getElementById("name").innerHTML = "Hello " + user + "! Here is your horoscope:";    var month =
+        document.getElementById("Month").value;
     console.log(typeof month);
     console.log(typeof parseInt(month));
     var day = document.getElementById("Day").value;
@@ -18,53 +20,67 @@ function doIt() {
 
 function getHoroscope (sign){
     if (sign === 0){
-        return "You are an Aquarius. In the near future, you will likely stumble upon a large sum of money. This fortune may help you in some ways, " +
-            "but beware of the ways in which it can hurt you. Money alone does not bring contentment.";
+        return "You are an Aquarius. In the future, you will likely stumble upon a large sum of money. It could " +
+            "come to you at any time, likely when you will least expect it. This fortune may help you in some ways, " +
+            "but beware of the ways in which it can hurt you. Money alone does not bring contentment. Remember to use" +
+            "your riches for good.";
     }
     if (sign === 1){
-        return "You are a Pisces! Beware... in your near future you will experience extreme hardship. Those close to you will guide you through " +
-            "your trying times, but it is ultimately up to you and you alone to work through your problems.";
+        return "You are a Pisces! Beware... in your near future you will experience extreme hardship. Those close to you " +
+            "will guide you through your trying times, but it is ultimately up to you and you alone to work through your " +
+            "problems. Struggling to overcome your issues will end up being a pivotal accomplishment in your life and will " +
+            "end up serving you very well.";
     }
     if (sign === 2){
-        return "You an an Aries. You will be met with great success and satisfaction in your near future.";
+        return "You an an Aries. In your near future, you will meet someone that will change your life. It could be a " +
+            "stranger at a bus stop, a waiter at a restaurant, or any random passerby. When you first meet them, you will" +
+            "not know their significance in your life, but with time, you'll understand how great the impact they've" +
+            "had on your life is.";
 
     }
     if (sign === 3){
-        return "Taurus! In your near future, you will be presented with an incredible opportunity. If your eyes are not fully open it may be " +
-            "easy to miss this opportunity, so stay alert so as not to miss out on an amazing future.";
+        return "Taurus! In your near future, you will be presented with an incredible opportunity. If your eyes are not " +
+            "fully open it may be easy to miss this opportunity, so stay alert so as not to miss out on an amazing future." +
+            "It could be disguised as a daunting opportunity, but it is essential that you abandon your fears in order" +
+            "to benefit from it.";
     }
     if (sign === 4){
-        return "You are a Gemini. If you've been feeling stressed lately, don't fret because your near future holds hope and relaxation. " +
-            "Remember to take time for yourself to reflect on your life and relax.";
+        return "You are a Gemini. Your future holds immense humor. Your life will suddenly become funnier than it ever has" +
+            "been in the past. Embrace this. Laughter is the best medicine for any ailment. Have fun giggling!";
     }
     if (sign === 5){
-        return "You are a Cancer. Unfortunately, your future holds great confusion. You will be presented with multiple ethical dilemmas " +
-            "that will be difficult to resolve. Stay true to your heart though, and all will end up working out in your favor.";
+        return "You are a Cancer. Unfortunately, your future holds great confusion. You will be presented with multiple " +
+            "ethical dilemmas that will be difficult to resolve. Stay true to your heart though, and all will end up " +
+            "working out in you favor.";
     }
     if (sign === 6){
-        return "Leo! Big changes are in your future. Change can be a source of discomfort, but if you relax and get some perspective on your " +
-            "life, you will find that you can handle any change that life throws at you.";
+        return "Leo! Big changes are in your future. Change can be a source of discomfort, but if you relax and get some" +
+            "perspective on your life, you will find that you can handle any change that life throws at you.";
     }
     if (sign === 7){
-        return "You are a Virgo! Your future holds riches, happiness, and love. Even if you've been feeling down lately, the tides will soon " +
-            "change and you will notice your mood significantly improving.";
+        return "You are a Virgo! Your future holds riches, happiness, and love. Even if you've been feeling down lately," +
+            "the tides will soon change and you will notice your mood significantly improving. All the hard work you've" +
+            "been putting into your daily tasks will end up paying off! That doesn't mean you can slack off though--" +
+            "you must continue to work hard in order to see the benefits of your labor.";
     }
     if (sign === 8){
-        return "You are a Libra and it is extremely likely that you will lose a large sum of money in the near future. This can be avoided, " +
-            "so keep a close eye on your spending.";
+        return "You are a Libra and it is extremely likely that you will lose a large sum of money in the near future." +
+            " This can be avoided, so keep a close eye on your spending. In fact, this loss will be a great financial " +
+            "lesson for you to grow as a responsible person.";
     }
     if (sign === 9){
-        return "Scorpio! Your most creative self will blossom in the near future. When you feel a creative idea coming, treasure it and " +
-            "use it to create something amazing. Your hard work and innovation will pay off very soon.";
+        return "Scorpio! Your most creative self will blossom in the near future. When you feel a creative idea coming, " +
+            "treasure it and use it to create something amazing. Your hard work and innovation will pay off very soon.";
     }
     if (sign === 10){
-        return "You are a Sagittarius! You've been feeling anxious and worrisome about what the future holds for you, but take a deep breath and relax. " +
-            "You will find yourself managing anything that is thrown at you with grace and positivity.";
+        return "You are a Sagittarius! You've been feeling anxious and worrisome about what the future holds for you, " +
+            "but take a deep breath and relax. You will find yourself managing anything that is thrown at you with grace " +
+            "and positivity.";
     }
     if (sign === 11){
-        return "You are a Capricorn. Be grateful to all those around you. Your support network is what is holding you together, and in the near " +
-            "future something may jeopardize one of your closest relationships. It is up to you to prevent conflict for both of your " +
-            "best interests.";
+        return "You are a Capricorn. Be grateful to all those around you. Your support network is what is holding you " +
+            "together, and in the near future something may jeopardize one of your closest relationships. It is up to " +
+            "you to prevent conflict for both of your best interests.";
     }
     if (sign === 12){
         return "I'm sorry. You've entered an invalid birthday. Please try again with a valid birthday.";
